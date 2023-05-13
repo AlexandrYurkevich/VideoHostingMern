@@ -1,0 +1,43 @@
+body {
+    margin:0;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+button,input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: gray;
+}
+
+.flex-ganre {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    overflow-x: auto;
+    background: black;
+}
+
+.flex-ganre::-webkit-scrollbar {
+    display: none;
+}
+
+.ganre-element {
+    min-width: fit-content;
+    height: 30px;
+    margin-right: 10px;
+    background: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.ganre-element:hover { background: gray;}

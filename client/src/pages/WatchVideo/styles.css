@@ -1,0 +1,114 @@
+body {
+    margin:0;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+button,input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: gray;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-page {
+    flex-grow: 1;
+    display: flex;
+    overflow-y: auto;
+    background: black;
+}
+
+.video-main{
+    margin:  5px;
+    width: 800px;
+    height: fit-content;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    background: white;
+}
+.video-screen {
+    width: 800px;
+    height: 440px;
+    background: grey;
+}
+
+.video-header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.author-data {
+    display: flex;
+    gap: 10px;
+}
+
+.channel-data {
+    display: flex;
+    flex-direction: column;
+}
+.subscribe-button {
+    height: 36px;
+    width: 80px;
+    border-radius: 15px;
+    background: red;
+    color: white;
+    cursor: pointer;
+}
+
+.like-section {
+    height: 26px;
+    display: flex;
+    padding: 5px;
+    justify-self: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    background: lightgray;
+    overflow: hidden;
+}
+
+.like-button  {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.like-icon {
+    font-size: 1.5em;
+}
+
+.video-desc {
+    background:lightgray;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tags, .video-views {
+    display: flex;
+    gap:5px;
+}
+
+.next-video-bar{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100%;
+    height: fit-content;
+    overflow-x: clip;
+    background:linear-gradient(rgb(255, 54, 111), rgb(255, 179, 64));
+}

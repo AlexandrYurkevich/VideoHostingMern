@@ -1,0 +1,103 @@
+body {
+    margin:0;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+button,input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: gray;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 40px;
+}
+
+.logo-container {
+    display: flex;
+    height: 100%;
+}
+.logo-element {
+    cursor: pointer;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.logo-icon {
+    color:rgb(255, 54, 111);
+    font-size: 1.2em;
+}
+
+.searchbar {
+    width: 40vw;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    max-height: 100%;
+    border: 1px black solid;
+    box-shadow: inset 0 1px 2px;
+    overflow: hidden;
+    background:linear-gradient(rgb(255, 54, 111), rgb(255, 179, 64));
+    border-radius: 20px;
+}
+
+.input-box {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 15px;
+}
+.search-box {
+    height: 100%;
+    cursor: pointer;
+    background: rgba(211, 211, 211, 80%);
+    width: 60px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px black solid;
+}
+
+.search-img {
+    margin-left: 0px;
+    font-size: 1.5rem;
+    height: 30px;
+}
+
+.getaccount {
+    height: 36px;
+    color: rgb(2, 156, 217);
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+    border-radius: 20px;
+    border: 1px rgb(2, 156, 217) solid;
+}
+
+.account-img{
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.getaccount:hover{
+    background: rgb(199, 239, 255);
+}

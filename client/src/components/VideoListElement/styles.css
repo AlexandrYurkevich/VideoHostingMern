@@ -1,0 +1,70 @@
+body {
+    margin:0;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+button,input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: gray;
+}
+
+.big-video-element{
+    margin: 10px;
+}
+.thumbnail {
+    width:340px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 15px;
+    background: grey;
+    overflow: hidden;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.thumbnail-duration {
+    position: relative;
+    bottom: 28px;
+    right: 6px;
+    background: black;
+    padding: 2px;
+    border-radius: 8px;
+    color:white;
+}
+
+.big-video-header {
+    margin-top: -20px;
+    display: flex;
+}
+
+.big-video-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 50%;
+}
+.video-views-date{
+    display: flex;
+    gap: 5px;
+}
+

@@ -1,0 +1,36 @@
+body {
+    margin:0;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+button,input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: gray;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-grid{
+    margin: 10px;
+    flex-grow: 1;
+    justify-content:flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    /* background:linear-gradient(rgb(255, 54, 111), rgb(255, 179, 64)); */
+}
+

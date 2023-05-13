@@ -1,0 +1,60 @@
+body {
+    margin:0;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+button,input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: gray;
+}
+
+
+
+.auth-background{
+    background:linear-gradient(rgb(255, 54, 111), rgb(255, 179, 64));
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form {
+    background: rgba(255, 255, 255, 60%);
+    border: 2px white solid;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.auth-field {
+    border-bottom: 2px black solid;
+    font-size:1em
+}
+
+.auth-button{
+    border-radius: 8px;
+    background: black;
+    font-size:1em;
+    color: white;
+    cursor: pointer;
+}
+
+.date-input{
+    color:grey;
+    width:100%;
+}

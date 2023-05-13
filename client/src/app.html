@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Template</title>
+</head>
+<body>
+    <div class="upload-container" style="display: flex; gap: 5px">
+        <form class="uploadwindow">
+            <div class="videoupload">
+                <label>Select video to upload(mp4)</label>
+                <input type="file" accept="video/mp4" required name="uploadvideo">
+                <label>Select thumbnail</label>
+                <input type="file" accept="image/png,image/jpeg" name="uploadthumbnail">
+            </div>
+            <div class="videodata">
+                <div class="videodata-element">
+                    <label>Title</label>
+                    <input class="upload-field" type="text" aria-multiline="true" required>
+                </div>
+                <label>Description</label>
+                <input class="upload-field" type="text" required>
+                <div class="videodata-element">
+                    <label>Tags</label>
+                    <input class="upload-field" class type="text">
+                </div>
+            </div>
+            <div class="uploadsubmit">
+                <input class="upload-button" type="submit" value="Upload Video">
+                <input class="upload-button" type="button" value="Cancel">
+            </div>
+        </form>
+    </div>
+    <div class="mesActions" style="display: none; flex-direction: column; background: white; border-radius: 5px;">
+        <button style="background: black; color:white; border-radius: 5px;">Delete</button>
+        <button  style="background: black; color:white; border-radius: 5px;">Change</button>
+    </div>
+    <div class="auth-background" style="display: none;">
+        <form class="auth-form">
+            <label>Register</label>
+            <input class="auth-field" type="text" placeholder="Username" required>
+            <div class="date-input">
+                <label>Birth</label>
+                <input type="date" min="1900-1-1" max>
+            </div>
+            <input class="auth-field" type="email" placeholder="E-mail" required>
+            <input class="auth-field" type="password" placeholder="Password" required minlength="6">
+            <input class="auth-field" type="password" placeholder="Repeat password" required minlength="6">
+            <div class="reset-forget">
+                <input class="auth-button" type="reset" value="Reset">
+                <input class="auth-button" type="button" value="Forget?">
+            </div>
+            <div class="remember" style="display:flex">
+                <input type="checkbox">
+                <label>Remember me</label>
+            </div>
+            <div class="logreg">
+                <input class="auth-button" type="submit" class="login" value="Login">
+                <a href="/register"><input class="auth-button" type="button" value="Register"></a>
+            </div>
+        </from>
+    </div>
+
+    <div class="hidden-container">
+        <div class="hidden-sidebar">
+            <div class="sidebar-header">
+                <button>
+                    <img src="" alt="logo">
+                </button>
+                <button>
+                    <img src="" alt="logo">
+                </button>
+            </div>
+            <div class="hidden-navigationbar">
+                <button class="nav-element">
+                    <img class="nav-img" src="" alt="home">
+                    Main Page
+                </button>
+                <button class="nav-element">
+                    <img class="nav-img" src="" alt="library">
+                    Library
+                </button>
+                <button class="nav-element">
+                    <img class="nav-img" src="" alt="history">
+                    History
+                </button>
+            </div>
+            <div class="settingsbar">
+
+            </div>
+        </div>
+        <div class="shadow-container"></div>
+    </div>
+    <div class="main-container">
+        <div class="main-header">
+            <div class="logo-container">
+                <button class="logo-element">
+                    <img src="./icons/menu.png" class="logo-menu" alt="menu">
+                </button>
+                <button class="logo-element">
+                    <img src="" class="logo-icon" alt="logo">
+                </button>
+            </div>
+            <div class="searchbar" role="search">
+                <div class="input-box">
+                    <input style="font-size: 16px" placeholder="Input here" type="text">
+                </div>
+                <button class="search-box">
+                    <img class="search-img" src="./icons/search.png" alt="search">
+                </button>
+            </div>
+            <button class="getaccount">
+                <img src="" alt="face">
+                Login
+            </button>
+        </div>
+        <!-- <div class="flex-ganre">
+            <button class="ganre-element">
+                All
+            </button>
+            <button class="ganre-element">
+                Comedy
+            </button>
+        </div>
+        <div class="video-grid">
+            <div class="big-video-element">
+                <a class="thumbnail-container" href="/watch=">
+                    <img class="thumbnail" src=""/>
+                    <label class="thumbnail-duration">2:12:45</label>
+                </a>
+                <div class="big-video-header">
+                    <div class="channel-element">
+                        <img class="channel-icon" src="" alt="channel">
+                    </div>
+                    <div class="big-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="video-page">
+            <div class="video-main">
+                <div class="video-screen">
+                    <video class="video-screen" autoplay controls src="C:\Users\sasha\Documents\Bandicam\bandicam 2023-04-19 00-20-30-966.mp4" type="video/mp4"></video>
+                </div>
+                <label style="font-size: 20px;">name sfsfdd</label>
+                <div class="video-header">
+                    <div class="author-data">
+                        <img class="channel-icon" src="" alt="channel">
+                        <div class="channel-data">
+                            <a href="/">sdfss</a>
+                            <span>24242</span>
+                        </div>
+                        <a href="/">
+                        <button class="subscribe-button">
+                            Subscribe
+                        </button>
+                        </a>
+                    </div>
+                    <div class="like-section">
+                        <button class="like-button" style="border-right: 2px grey solid;">
+                            <img src="" alt="like">
+                            121313
+                        </button>
+                        <button>
+                            <img src="" alt="dislike">
+                            1231313
+                        </button>
+                    </div>
+                </div>
+                <div class="video-desc">
+                    <div class="video-views">
+                        <label>42423432 views</label>
+                        <label>123.55.12313</label>
+                        <div class="tags">
+                            <span>#sdfdsds</span>
+                            <span>#sdfdsds</span>
+                        </div>
+                    </div>
+                    <label style="word-wrap:break-word">sbfkjsfbsbfksfhfsdgagkfgag dfajlhfdsjflahdsflhjadsjfkhhhhhsbfkjsfbsbfksfhfsdgagkfgagdfajlhfdsjflahdsflhjadsjfkhhhhhsbfkjsfbsbfksfhfsdgagkfgagdfajlhfdsjflahdsflhjadsjfkhhhhhsbfkjsfbsbfksfhfsdgagkfgagdfajlhfdsjflahdsflhjadsjfkhhhhhhhhdsfjsdhfkhaslfahsjflkaslgaksslgldfsdsjgjsdgjkldghjdsfklgdhgdhgs</label>
+                </div>
+                <div class="comment-section">
+                    <div class="comment-count">
+
+                    </div>
+                    <div class="comment-input">
+
+                    </div>
+                    <div class="comment-list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="next-video-bar">
+                <div class="flex-ganre">
+                    <button class="ganre-element">
+                        All
+                    </button>
+                    <button class="ganre-element">
+                        Comedy
+                    </button>
+                    <button class="ganre-element">
+                        All
+                    </button>
+                    <button class="ganre-element">
+                        Comedy
+                    </button>
+                    <button class="ganre-element">
+                        All
+                    </button>
+                    <button class="ganre-element">
+                        Comedy
+                    </button>
+                    <button class="ganre-element">
+                        All
+                    </button>
+                    <button class="ganre-element">
+                        Comedy
+                    </button>
+                    <button class="ganre-element">
+                        All
+                    </button>
+                    <button class="ganre-element">
+                        Comedy
+                    </button>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-video-element">
+                    <img class="next-video-thumbnail" src="" alt="thumbnail">
+                    <div class="next-video-data">
+                        <a href="/">sfsfsdfsfs</a>
+                        <span>sfsfsdfsfs</span>
+                        <div class="video-views-date">
+                            <span>sfsfsdfsfs</span>
+                            <span>•</span>
+                            <span>1 day ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="channel-container">
+            <div class="channel-header"></div>
+            <div class="channel-main">
+                <div style="display: flex; gap: 10px;">
+                    <img class="channel-icon-big" src="" alt="icon">
+                    <div class="channel-data">
+                        <label class="channel-name">sdfdsfsdf</label>
+                        <div style="display: flex; gap: 5px">
+                            <span>@addadad</span>
+                            <span>123213123 subcribers</span>
+                            <span>234 video</span>
+                        </div>
+                        <span style="word-wrap:break-word">fsfsfgsjfdjhgshdhgdsjklghdaljgksldjljfas;jfasjfaskfasklfakl;f</span>
+                    </div>
+                </div>
+                <div style="display:flex; gap: 5px">
+                    <button class="subscribe-button">
+                        Subscribe
+                    </button>
+                    <button class="subscribe-button" style="background: black;">
+                        Upload Video
+                    </button>
+                    
+                        const handleFileChange = (event) => {
+                            setFile(event.target.files[0]);
+                        };
+                        const videos = await Video.find({ author: "N" }).sort({ views: -1 }).skip(20).limit(20);
+                        <input type="file" accept="video/*"/>
+                        useEffect(() => {
+                            const handleScroll = () => {
+                                if (window.scrollY + window.innerHeight === document.body.offsetHeight) {
+                                    // Perform your action here
+                                    console.log('End of page reached');
+                                }
+                            };
+                            window.addEventListener('scroll', handleScroll);
+                            return () => {
+                                window.removeEventListener('scroll', handleScroll);
+                            };
+                        }, []);
+                   
+                </div>
+            </div>
+            <div class="channel-body">
+                <div class="big-video-element">
+                    <div class="thumbnail">
+                    </div>
+                    <div class="big-video-header">
+                        <div class="channel-element">
+                            <img class="channel-icon" src="" alt="channel">
+                        </div>
+                        <div class="big-video-data">
+                            <a href="/">sfsfsdfsfs</a>
+                            <span>sfsfsdfsfs</span>
+                            <div class="video-views-date">
+                                <span>sfsfsdfsfs</span>
+                                <span>•</span>
+                                <span>1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="big-video-element">
+                    <div class="thumbnail">
+                    </div>
+                    <div class="big-video-header">
+                        <div class="channel-element">
+                            <img class="channel-icon" src="" alt="channel">
+                        </div>
+                        <div class="big-video-data">
+                            <a href="/">sfsfsdfsfs</a>
+                            <span>sfsfsdfsfs</span>
+                            <div class="video-views-date">
+                                <span>sfsfsdfsfs</span>
+                                <span>•</span>
+                                <span>1 day ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
+
+
+

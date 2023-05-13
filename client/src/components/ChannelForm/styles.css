@@ -1,0 +1,77 @@
+body {
+    margin:0;
+    font-family:'Roboto', Arial, sans-serif;
+}
+
+button,input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+span {
+    color: gray;
+}
+.upload-container{
+    position: absolute;
+    z-index: 100;
+    width:100vw;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.301);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.uploadwindow{
+    transform: scale(1.2);
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:280px;
+}
+.videoupload{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    border-bottom: 2px black solid;
+}
+.videodata{
+    margin-top: 5px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    border-bottom: 2px black solid;
+}
+.videodata-element{
+    display: flex;
+    gap: 5px;
+}
+.uploadsubmit{
+    margin-top: 5px;
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.upload-field {
+    background: lightgray;
+    border-radius: 5px;
+}
+
+.upload-button {
+    background: black;
+    border-radius: 5px;
+    color: white;
+}
+
+.upload-button:hover{
+    background: lightgray;
+}
